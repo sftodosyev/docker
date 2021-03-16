@@ -5,7 +5,7 @@ RUN pip install Flask==0.10.1 uWSGI requests==2.5.1 redis==2.10.3
 RUN mkdir app
 WORKDIR /app
 COPY identidock/app /app
-COPY cmd.sh /
+COPY identidock/cmd.sh /
 
 EXPOSE 9090 9191
 USER uwsgi
